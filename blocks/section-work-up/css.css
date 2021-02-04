@@ -1,4 +1,120 @@
 .works-up {
 	background: radial-gradient(at 20%, #111, #000);
-	height: 400px;
+	
+
+}
+.cell {
+	margin-left: 20px;
+	margin-bottom: 70px;
+	margin-right: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.contacts__subtitle {
+	font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 44px;
+line-height: 52px;
+text-align: left;
+
+
+color: white;
+}
+.contacts__subtitle span {
+	color: goldenrod;
+}
+.form__names  {
+	margin-top: 40px;
+	padding-left: 20px;
+	margin-bottom: 15px;
+	font-family: Rubik;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 18px;
+color: rgba(240, 240, 240, 0.8)
+}
+.contact__forms {
+	display: flex;
+	flex-direction: column;
+	width: 360px;
+
+}
+.contact__form {
+	display: flex;
+	flex-direction: column;
+}
+.form__name {
+	background: inherit;
+	border-radius: 18px;
+	padding-left: 25px;
+	height: 60px;
+	border:none;
+box-shadow: 0 0 1px 1px #171717,
+              0 0 2px 2px goldenrod;
+     color: rgba(240, 240, 240, 1);
+ font-family: Rubik;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 18px;
+}
+.form__contact {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.contact__form-text {
+	margin-left: 65px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.form__text {
+	width: 360px;
+	height: 320px;
+	box-shadow: 0 0 1px 1px #171717,
+              0 0 2px 2px goldenrod;
+              color: rgba(240, 240, 240, 1);
+ padding-left: 25px;
+ padding-top: 25px;
+ font-family: Rubik;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 18px;
+resize: none;
+
+}
+.form__logo {
+	outline: none;
+	background: goldenrod;
+	border-radius: 50%;
+	position: absolute;
+	background-image: url(../../image/form/form-click.svg);
+	background-position: center;
+	width: 48px;
+	height: 48px;
+	right: 25px;
+	bottom: 25px;
+background-repeat: no-repeat;
+}
+.contact__image {
+	position: absolute;
+	width: 1280px;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
+  transition-delay: 3600s;
+}
+
+
+.cell__links {
+	margin-top: 180px;
 }

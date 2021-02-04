@@ -1,14 +1,13 @@
-let open = document.querySelector(".rewivers");
+let open = document.querySelector(".reviews__button");
+let rewiverser = document.querySelector(".rewiverser");
 let close = document.querySelector(".close");
-let button = document.querySelector(".Open");
-let pupuupOpen = document.querySelector(".developer-info__reviews-add")
 
-function opens () {
-  open.classList.add("open")
+
+function rewiv () {
+   rewiverser.classList.toggle("active")
 }
-function closes () {
-  open.classList.remove("open")
-}
-pupuupOpen.addEventListener("click" , opens);
-close.addEventListener('click', closes);
+
+
+open.addEventListener('click', rewiv);
+close.addEventListener('click', rewiv);
 
