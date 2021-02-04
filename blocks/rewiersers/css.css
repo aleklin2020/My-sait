@@ -58,6 +58,10 @@ background-repeat: no-repeat;
 .active {
 	display: block;
 }
+
 .page {
-	overflow-x: hidden;
+	position: relative;
+	width: 100vw;
+	overflow: hidden;
+	
 }
