@@ -43,6 +43,15 @@ ul li {
   line-height: 1.4em;
 }
 
+.page {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  
+}
+.header {
+  position: relative;
+}
 .loaded2 {
   -webkit-transform-origin: -10em top;
   transform-origin: -10em top;
