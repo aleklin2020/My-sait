@@ -102,3 +102,38 @@
 	color: #aaa;
 	font-size: 25px;
 }
+.about__image {
+  width: 500px;
+  height: 500px;
+}
+.about__images {
+  position: relative;
+  transform: rotate(5deg);
+  overflow: hidden;
+}
+.about__image-container {
+   position: absolute;
+  top: 45px;
+  left: 84px;
+  width: 333px;
+  height: 410px;
+  overflow: hidden;
+}
+.about__img-ful {
+ 
+  width: 330px;
+  height: 410px;
+}
+
+.about__image-animation {
+  animation: image 60s linear 1s infinite;
+}
+
+@keyframes image {
+  0% {
+    transform: translate(0 ,0);
+  }
+  100% {
+    transform: translate(0 , -2700px);
+  }
+}
