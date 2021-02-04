@@ -1,0 +1,35 @@
+.knowledges {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 80px;
+}
+.knowledge {
+}
+.knowledge__title {
+	color: goldenrod;
+}
+.knowledge__title span {
+	color: white;
+}
+.knowledge__lists {
+	
+}
+.knowledge__list {
+	
+}
+.knowledge__block {
+	margin-top: 60px;
+	display: flex;
+	flex-direction: column;
+
+}
+.knowledge__block-title {
+}
+.knowledge__block-text {
+}
+.knowledge__block-author {
+	color: goldenrod;
+	opacity: 0.6;
+	margin-left: 0;
+}

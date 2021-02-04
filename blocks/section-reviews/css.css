@@ -1,0 +1,124 @@
+.reviews {
+	position: relative;
+
+}
+.reviews__container {
+	display: flex;
+	flex-direction: column;
+}
+.reviews__button {
+	align-self: flex-end;
+	margin-right: 30px;
+
+		display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 340px;
+	height: 60px;
+	 background-color: transparent;
+  border-radius: 18px;
+border: 1.4px solid goldenrod;
+box-sizing: border-box;
+font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 18px;
+color: goldenrod;
+outline: none;
+}
+.reviews__button:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
+.reviews__button span {
+	color: white;
+	margin-left: 5px;
+}
+
+.review {
+	display: flex;
+	overflow-x: scroll;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+.developer-info__review {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	max-width: 310px;
+	min-width: 220px;
+	border-radius: 32px 18px 18px 31px;
+	border: 1.4px solid goldenrod;
+box-sizing: border-box;
+
+}
+
+.review__info {
+	display: flex;
+	
+	
+}
+
+.review__names {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+
+}
+.review__link {
+	font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+color: goldenrod;
+opacity: 0.7;
+opacity: 0.8;
+margin-bottom: 10px;
+}
+.review__name {
+font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 18px;
+color: #D3D3D4;
+opacity: 0.8;
+max-width: 150px;
+overflow-x: hidden;
+text-overflow: ellipsis;
+}
+.review__text {
+	white-space: normal;
+	font-family: Rubik;
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 18px;
+color: rgba(240, 240, 240, 1);
+align-self: center;
+max-width: 260px;
+max-height: 300px;
+overflow: hidden;
+}
+
+.review__data {
+font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+color: #D3D3D4;
+opacity: 0.5;
+background-image: url(image/info/data.svg);
+background-repeat: no-repeat;
+background-position: left center;
+padding-left: 20px;
+}
+.review__bottom {
+	margin-bottom: -10px;
+}

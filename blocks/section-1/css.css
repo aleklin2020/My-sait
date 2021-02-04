@@ -1,0 +1,104 @@
+.container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding-top: 200px;
+	background: #171717;
+}
+.container::before,
+.container::after {
+  content: "";
+  width: 50vmax;
+  height: 40vmax;
+  position: absolute;
+  z-index: -1;
+  background: rgba(255, 255, 255, 0.03);
+  left: 30vmin;
+  top: 10vmin;
+  -webkit-animation: squish 10s linear infinite alternate,
+    spin 40s linear infinite;
+  animation: squish 10s linear infinite alternate, spin 40s linear infinite;
+  z-index: 0;
+  will-change: border-radius, transform;
+  -webkit-transform-origin: 55% 55%;
+  transform-origin: 55% 55%;
+  pointer-events: none;
+}
+
+
+.container::after {
+  width: 80vmin;
+  height: 60vmin;
+  left: auto;
+  right: 30vmin;
+  top: auto;
+  bottom: 40vmin;
+  animation: squish 10s linear infinite alternate,
+    spin 40s linear infinite reverse;
+  -webkit-transform-origin: 20% 20%;
+  transform-origin: 20% 20%;
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes squish {
+  0% {
+    border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+  }
+  100% {
+    border-radius: 40% 60%;
+  }
+}
+@keyframes squish {
+  0% {
+    border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+  }
+  100% {
+    border-radius: 40% 60%;
+  }
+}
+
+
+
+
+.aboutes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.about {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	min-width: 40%;
+}
+.about__title {
+	    text-transform: uppercase;
+	    border-bottom: 1px solid #ffffff30;
+	    width: 100%;
+        
+      color: goldenrod;
+	    font-size: 35px;
+	    padding-bottom: 20px;
+}
+
+.about__title span {
+	color: white;
+}
+.about__text:nth-child(1) {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	color: #aaa;
+	font-size: 25px;
+}
