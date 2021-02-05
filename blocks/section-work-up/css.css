@@ -69,7 +69,7 @@ color: rgba(240, 240, 240, 0.8)
 	border-radius: 18px;
 	padding-left: 25px;
 	height: 60px;
-	border:none;
+	border:2px solid goldenrod;
 -webkit-box-shadow: 0 0 1px 1px #171717,
               0 0 2px 2px goldenrod;
         box-shadow: 0 0 1px 1px #171717,
