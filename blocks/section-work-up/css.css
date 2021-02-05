@@ -70,10 +70,6 @@ color: rgba(240, 240, 240, 0.8)
 	padding-left: 25px;
 	height: 60px;
 	border:2px solid goldenrod;
--webkit-box-shadow: 0 0 1px 1px #171717,
-              0 0 2px 2px goldenrod;
-        box-shadow: 0 0 1px 1px #171717,
-              0 0 2px 2px goldenrod;
      color: rgba(240, 240, 240, 1);
  font-family: Rubik;
 font-style: normal;
@@ -105,11 +101,6 @@ line-height: 18px;
 .form__text {
 	width: 360px;
 	height: 320px;
-	-webkit-box-shadow: 0 0 1px 1px #171717,
-              0 0 2px 2px goldenrod;
-	        box-shadow: 0 0 1px 1px #171717,
-              0 0 2px 2px goldenrod;
-              color: rgba(240, 240, 240, 1);
  padding-left: 25px;
  padding-top: 25px;
  font-family: Rubik;
@@ -150,6 +141,9 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
 .cell__links {
 	position: relative;
 	margin-top: 100px;
+	margin-left: 80px;
+	margin-right: 50px;
+	box-sizing: border-box;
 }
 .cell__links-image {
 	width: 200px;
