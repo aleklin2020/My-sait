@@ -39,7 +39,7 @@ ol li::before {
 }
 
 ul li {
-  margin-bottom: 20px;
+  margin:0;
   line-height: 1.4em;
 }
 
