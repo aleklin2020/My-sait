@@ -1,3 +1,23 @@
+@media (min-width:1380px ) and (max-width: 1920px) {
+	.about__image {
+		width: 700px;
+		height: 900px;
+	}
+	.about__image-container {
+		width: 600px;
+		height: 580px;
+		left: 115px;
+		top: 158px;
+		background-size: cover;
+	}
+	.about__img-ful {
+		width: 470px;
+		height: 310px;
+	}
+	.about__images {
+		margin-top: 150px;
+	}
+}
 @media (max-width: 875px) {
 	.aboutes {
 		flex-direction: column;
