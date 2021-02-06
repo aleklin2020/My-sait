@@ -24,17 +24,17 @@
         </div>
         <div class="contact__form">
           <label class="form__names" for="link">Link</label>
-          <input class="form__name"  type="link" name="link"  id="link">
+          <input class="form__name" placeholder="Вставьте ссылку на готовый продукт"  type="url" name="link"  id="link">
         </div>
         <div class="contact__form">
-          <label class="form__names" for="data">Когда была выполнена работа</label>
-          <input class="form__name" type="date" name="data" id="data">
+          <label class="form__names" for="date">Укажите когда была выполнена работа</label>
+          <input class="form__name" type="date" name="date" id="date">
         </div>
       </div>
       <div class="contact__form-text">
         <div class="image__rever-2"></div>
           <label class="form__names"  for="text">Messege</label>
-          <textarea class="form__name form__text" required placeholder="Тема обрашения" id="text"></textarea>
+          <textarea class="form__name form__text" required placeholder="Мне важно знать ваше мнение" id="text"></textarea>
           <button class="form__logo"></button>
         </div>
 
@@ -111,7 +111,8 @@
 
       </h1>
       <h2 class="loaded2 topSubtitle">The Portfolio of Alex Lin</h2>
-      <p class="loaded3">I've been a Front-end Developer and UI Designer for a long time & I love this stuff. My focus is responsive, cross-browser friendly code and device-agnostic design.</p>
+      <div class="lader__text">
+      <p class="loaded3">I've been a Front-end Developer and UI Designer for a long time & I love this stuff. My focus is responsive, cross-browser friendly code and device-agnostic design.</p></div>
     </div>
 
     <div class="compassrose">
@@ -150,8 +151,11 @@
           <section class="aboutes">
             <div class="about">
               <h2 class="about__title">About <span>me</span></h2>
-              <p class="about__text">texxt</p>
-              <p class="about__text">texxt</p>
+              <p class="about__text">No one is going to hand me success. I must go out & get it myself. That’s
+why I’m here. To dominate. To conquer. Both the world, and myself.</p>
+  <p class="about__text">No one is going to hand me success. I must go out & get it myself. That’s
+why I’m here. To dominate. To conquer. Both the world, and myself.</p>
+              
             </div>
             <div class="about__images">
               <div class="about__image-container">
@@ -383,14 +387,15 @@
           <input class="form__name" required type="email" name="email" placeholder="frontend@yandex.ru" id="email">
         </div>
         <div class="contact__form">
-          <label class="form__names" for="subject">Phone</label>
-          <input class="form__name" type="tel" name="subject" id="subject">
+          <label class="form__names" for="phone">Phone</label>
+          <input class="form__name" type="tel" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{4}"
+       placeholder="Формат номера 89993332211" name="phone" id="phone">
         </div>
         
       </div>
       <div class="contact__form-text">
           <label class="form__names"  for="text">Messege</label>
-          <textarea class="form__name form__text" required placeholder="Тема обрашения" id="text"></textarea>
+          <textarea class="form__name form__text" minlength="10" required placeholder="Тема обрашения" id="text"></textarea>
           <button class="form__logo"></button>
         </div>
 
@@ -399,7 +404,7 @@
 
         <div class="cell__links">
           <div class="cell__link">
-            <a class="cell__link-list" href="#"><img class="image__link svg" src="image/cell-links/git.svg"></a>
+            <a class="cell__link-list" href="#"><img class="image__link" src="image/cell-links/git.svg"></a>
             <a class="cell__link-list" href="#"><img class="image__link" src="image/cell-links/telegram.svg"></a>
             <a class="cell__link-list" href="#"><img class="image__link" src="image/cell-links/vk.svg"></a>
             <a class="cell__link-list" href="#"><img class="image__link" src="image/cell-links/watsaap.svg"></a>
@@ -414,10 +419,16 @@
 
   </section>
 
+  <footer class="footer">
+    <p class="footer__author"> © Alex Lin 2021</p>
+  
+  </footer>
+
 </div>
 
 
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  <script src="js/text-redverding.js"></script>
   <script src="js/js.js"></script>
   <script src="js/menu-open.js"></script>
 </body>

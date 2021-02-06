@@ -55,6 +55,7 @@ ul li {
 .loaded2 {
   -webkit-transform-origin: -10em top;
   transform-origin: -10em top;
+  color: goldenrod;
 }
 
 .loaded3 {
@@ -547,5 +548,10 @@ ul li {
   background: linear-gradient(to bottom, #f7455f, #f57a0c, #e6b30b);
 }
 
-
-
+.lader__text {
+  max-width: 500px;
+}
+.header__wave {
+  color: #999999;
+  animation: 1.5s color infinite;
+}

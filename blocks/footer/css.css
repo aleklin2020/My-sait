@@ -1,0 +1,19 @@
+.footer {
+  position: relative;
+  background: #171717;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.footer::after {
+  background-image: 
+}
+.footer__author {
+  margin: 0;
+  padding-left: 30px;
+  opacity: 0.7;
+  font-size: 14px;
+  color: #aaa;
+  letter-spacing: 2px;
+  font-weight: 400;
+}

@@ -76,12 +76,15 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .about {
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	min-width: 40%;
+	max-width: 40%;
+
 }
 .about__title {
 	    text-transform: uppercase;
@@ -95,6 +98,21 @@
 
 .about__title span {
 	color: white;
+}
+
+.about__text {
+ 
+
+}
+.wave {
+  color: #999999;
+  animation: 1.5s color infinite;
+}
+
+@keyframes color {
+  50% {
+    color: #8fc8ae;
+  }
 }
 .about__text:nth-child(1) {
 	margin-top: 30px;
@@ -110,6 +128,7 @@
   position: relative;
   transform: rotate(5deg);
   overflow: hidden;
+  margin-top: 60px;
 }
 .about__image-container {
    position: absolute;
