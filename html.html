@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Alex Lin">
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="page/import.css">
 </head>
@@ -13,27 +14,27 @@
     
       <div class="contact__close">
         <button class="close"></button>
-      <h2 class="contacts__subtitle some-space">Leave a Review
+      <h2 class="contacts__subtitle some-space" text="form__leave">
       </h2>
         </div>
       <form class="form__contact">
         <div class="contact__forms">
         <div class="contact__form">
-          <label class="form__names" for="name">Name</label>
+          <label class="form__names" for="name" text="form__name"></label>
           <input class="form__name" required type="name" name="Name" placeholder="Alex" id="name">
         </div>
         <div class="contact__form">
-          <label class="form__names" for="link">Link</label>
+          <label class="form__names" for="link" text="form__link"></label>
           <input class="form__name" placeholder="Вставьте ссылку на готовый продукт"  type="url" name="link"  id="link">
         </div>
         <div class="contact__form">
-          <label class="form__names" for="date">Укажите когда была выполнена работа</label>
+          <label class="form__names" for="date" text="form__date"></label>
           <input class="form__name" type="date" name="date" id="date">
         </div>
       </div>
       <div class="contact__form-text">
         <div class="image__rever-2"></div>
-          <label class="form__names"  for="text">Messege</label>
+          <label class="form__names"  for="text" text="form__mesege">Messege</label>
           <textarea class="form__name form__text" required placeholder="Мне важно знать ваше мнение" id="text"></textarea>
           <button class="form__logo"></button>
         </div>
@@ -43,24 +44,22 @@
 
   </section>
 
-  <div class="button__lang"><button class="btn btn-1 ">
-      <svg>
-        <rect x="0" y="0" fill="none" width="100%" height="100%"/>
-      </svg>
-     rus
-    </button></div>
+  <div class="button__lang header__tongue">
+    <input id="lang" type='checkbox' onclick="changeLagnuage()">
+        <label for="lang" class="rus header__tongue-button">RUS</label>
+         <label for="lang" class="eng header__tongue-button">ENG</label></div>
 
     <nav class="nav ">
   <div class="navList">
-    <a href="#top" class="scrollLink"><span>Top</span></a>
-    <a href="#alpha" class="scrollLink"><span>About</span></a>
-    <a href="#beta" class="scrollLink"><span>Gallery</span></a>
-    <a href="#gamma" class="scrollLink"><span>Skillset</span></a>
-    <a href="#delta" class="scrollLink"><span>Code</span></a> 
+    <a  href="#about" class="scrollLink"><span text="nav_1"></span></a>
+    <a href="#alpha" class="scrollLink"><span text="nav_2"></span></a>
+    <a href="#beta" class="scrollLink"><span text="nav_3"></span></a>
+    <a href="#gamma" class="scrollLink"><span text="nav_4"></span></a>
+    <a href="#delta" class="scrollLink"><span text="nav_5"></span></a> 
   </div>
 </nav>
 
-<div class="nav-toggle"><span><h3>menu</h3></span></div>
+<div class="nav-toggle"><span><h3 text="menu"></h3></span></div>
 
 <header class="header">
 
@@ -117,7 +116,7 @@
         </div>
 
       </h1>
-      <h2 class="loaded2 topSubtitle">The Portfolio of Alex Lin</h2>
+      <h2 class="loaded2 topSubtitle" text="topSubtitle"></h2>
       <div class="lader__text">
       <p class="loaded3">I've been a Front-end Developer and UI Designer for a long time & I love this stuff. My focus is responsive, cross-browser friendly code and device-agnostic design.</p></div>
     </div>
@@ -154,13 +153,13 @@
     </header>
 
 
-	<div class="container">
+	<div class="container" id="about">
           <section class="aboutes">
             <div class="about">
-              <h2 class="about__title">About <span>me</span></h2>
+              <h2 class="about__title" text="about__title">About</h2>
               <p class="about__text">No one is going to hand me success. I must go out & get it myself. That’s
 why I’m here. To dominate. To conquer. Both the world, and myself.</p>
-  <p class="about__text">No one is going to hand me success. I must go out & get it myself. That’s
+  <p class="about__text" text="About__text">No one is going to hand me success. I must go out & get it myself. That’s
 why I’m here. To dominate. To conquer. Both the world, and myself.</p>
               
             </div>
@@ -186,8 +185,8 @@ why I’m here. To dominate. To conquer. Both the world, and myself.</p>
           </section>
 
           <section class="myskill">
-            <h2 class="myskill__title">Skill<span>set</span></h2>
-            <p class="myskill__subtitle wave">Быстрые.Лучше.Cовременнее</p>
+            <h2 class="myskill__title" text="meskill__title"></h2>
+            <p class="myskill__subtitle wave" text="myskill__subtitle">Быстрые.Лучше.Cовременнее</p>
             <div class="carousel-container">
             <div class="carousel">
             <div class="skill-card panel" id="panel-1">
@@ -272,7 +271,7 @@ why I’m here. To dominate. To conquer. Both the world, and myself.</p>
 
           <section class="knowledges">
             <div class="knowledge">
-              <h2 class="knowledge__title">Я <span>изучаю</span></h2>
+              <h2 class="knowledge__title" text="knowledge__title"></h2>
               <ul class="knowledge__lists">
                 <li class="knowledge__list">English</li>
                 <li class="knowledge__list">botstrap</li>
@@ -298,7 +297,7 @@ why I’m here. To dominate. To conquer. Both the world, and myself.</p>
     </svg>
 
 <div class="reviews__container">
-<button class="reviews__button">Добавить <span >отзыв</span></button>
+<button class="reviews__button" text="reviews__button"></button>
           <div class="review">
 
 
@@ -307,7 +306,7 @@ why I’m here. To dominate. To conquer. Both the world, and myself.</p>
             
             <div class="review__names">
               <h2 class="review__name">Alesadaasdasdsdasdasdx</h2>
-              <a class="review__link" href="#">Посмотреть работу</a>
+              <a class="review__link" text="review__link" href="#">Посмотреть работу</a>
               
             </div>
           </div>
@@ -319,7 +318,7 @@ why I’m here. To dominate. To conquer. Both the world, and myself.</p>
             
             <div class="review__names">
               <h2 class="review__name">Alesadaasdasdsdasdasdx</h2>
-              <a class="review__link" href="#">Посмотреть работу</a>
+              <a class="review__link" text="review__link" href="#">Посмотреть работу</a>
               
             </div>
           </div>
@@ -331,7 +330,7 @@ why I’m here. To dominate. To conquer. Both the world, and myself.</p>
             
             <div class="review__names">
               <h2 class="review__name">Alesadaasdasdsdasdasdx</h2>
-              <a class="review__link" href="#">Посмотреть работу</a>
+              <a class="review__link" text="review__link" href="#">Посмотреть работу</a>
               
             </div>
           </div>
@@ -343,7 +342,7 @@ why I’m here. To dominate. To conquer. Both the world, and myself.</p>
             
             <div class="review__names">
               <h2 class="review__name">Alesadaasdasdsdasdasdx</h2>
-              <a class="review__link" href="#">Посмотреть работу</a>
+              <a class="review__link" text="review__link" href="#">Посмотреть работу</a>
               
             </div>
           </div>
@@ -391,11 +390,11 @@ why I’m here. To dominate. To conquer. Both the world, and myself.</p>
     <div class="cell">
       
       <div class="cell__form">
-      <h2 class="contacts__subtitle"><span>Contacts witch</span> me</h2>
+      <h2 class="contacts__subtitle" text="contacts__subtitle">Contacts witch me</h2>
       <form class="form__contact">
         <div class="contact__forms">
         <div class="contact__form">
-          <label class="form__names" for="name">Name</label>
+          <label class="form__names" for="name" text="form__name">Name</label>
           <input class="form__name" required type="name" name="Name" placeholder="Alex" id="name">
         </div>
         <div class="contact__form">
@@ -403,14 +402,14 @@ why I’m here. To dominate. To conquer. Both the world, and myself.</p>
           <input class="form__name" required type="email" name="email" placeholder="frontend@yandex.ru" id="email">
         </div>
         <div class="contact__form">
-          <label class="form__names" for="phone">Phone</label>
+          <label class="form__names" for="phone" text="form__phone">Phone</label>
           <input class="form__name" type="tel" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{4}"
        placeholder="Формат номера 89993332211" name="phone" id="phone">
         </div>
         
       </div>
       <div class="contact__form-text">
-          <label class="form__names"  for="text">Messege</label>
+          <label class="form__names"  for="text" text="form__mesege">Messege</label>
           <textarea class="form__name form__text" minlength="10" required placeholder="Тема обрашения" id="text"></textarea>
           <button class="form__logo"></button>
         </div>
@@ -452,5 +451,6 @@ why I’m here. To dominate. To conquer. Both the world, and myself.</p>
   <script src="js/taped-text.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
   <script src="js/my-works.js"></script>
+  <script src="js/langiecke.js"></script>
 </body>
 </html>
