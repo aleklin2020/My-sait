@@ -21,16 +21,13 @@
         <div class="contact__forms">
         <div class="contact__form">
           <label class="form__names" for="name" text="form__name"></label>
-          <input class="form__name" required type="name" name="Name" placeholder="Alex" id="name">
+          <input class="form__name form-name" required type="name" name="Name" placeholder="Alex" id="name">
         </div>
         <div class="contact__form">
           <label class="form__names" for="link" text="form__link"></label>
-          <input class="form__name" placeholder="Вставьте ссылку на готовый продукт"  type="url" name="link"  id="link">
+          <input class="form__name form-link" placeholder="Вставьте ссылку на готовый продукт"  type="url" name="link"  id="link">
         </div>
-        <div class="contact__form">
-          <label class="form__names" for="date" text="form__date"></label>
-          <input class="form__name" type="date" name="date" id="date">
-        </div>
+       
       </div>
       <div class="contact__form-text">
         <div class="image__rever-2"></div>
@@ -443,7 +440,27 @@ why I’m here. To dominate. To conquer. Both the world, and myself.</p>
 </div>
 
 
-  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<template id="templete-comments">
+  
+                <div class="developer-info__review">
+          <div class="review__info">
+            
+            <div class="review__names">
+              <h2 class="review__name"></h2>
+              <a class="review__link" text="review__link" href="#">view work</a>
+              
+            </div>
+          </div>
+          <p class="review__text"></p>  
+          <data class="review__data">11.11.2011</data>
+      </div>
+</template>
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+  
+  <script src="js/instalComments.js"></script>
   <script src="js/text-redverding.js"></script>
   <script src="js/js.js"></script>
   <script src="js/menu-open.js"></script>
@@ -452,5 +469,7 @@ why I’m here. To dominate. To conquer. Both the world, and myself.</p>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
   <script src="js/my-works.js"></script>
   <script src="js/langiecke.js"></script>
+ 
+  <script></script>
 </body>
 </html>
