@@ -148,5 +148,10 @@
 	.image__rever-2 {
 		display: none;
 	}
-
+	.heroSection .textHome {
+		padding-right: 10px;
+	}
+	.lader__text {
+		max-width: 300px;
+	}
 }
