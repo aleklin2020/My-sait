@@ -41,7 +41,9 @@
 	.contact__form-text {
 		width: 360px;
 	}
-
+	.knowledge__block {
+		max-width: 40%;
+	}
 }
 
 
@@ -58,7 +60,9 @@
 		flex-direction: column;
 		align-items: center;
 	}
-	
+	.knowledge__block {
+		max-width: 80%;
+	}
 }
 
 @media (max-width: 500px) {
@@ -120,5 +124,11 @@
 		margin-top: 150px;
 	}
 
+	.knowledge__block {
+		max-width: 95%;
+	}
+	.workes__text {
+		font-size: 16px;
+	}
 
 }

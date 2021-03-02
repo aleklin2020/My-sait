@@ -132,7 +132,7 @@ text-align: center;
  perspective: 600px;
 }
 
-.work:hover {
+.work:focus {
   z-index: 10;
   transform: scale(1.3);
 }
