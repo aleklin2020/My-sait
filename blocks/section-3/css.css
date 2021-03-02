@@ -3,8 +3,12 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 	padding-top: 80px;
+	overflow-x: hidden;
+
 }
 .knowledge {
+	width: 400px;
+	overflow-x: hidden;
 }
 .knowledge__title {
 	color: goldenrod;
@@ -13,23 +17,147 @@
 	color: white;
 }
 .knowledge__lists {
+	margin-left: 20px;
 	
 }
-.knowledge__list {
-	
-}
+
 .knowledge__block {
-	margin-top: 60px;
+	margin-top: 120px;
 	display: flex;
 	flex-direction: column;
+	max-width: 35%;
 
 }
 .knowledge__block-title {
 }
 .knowledge__block-text {
+	font-family: 'Dancing Script', cursive , sans-serif;
+	font-size: 22px;
+	font-weight: bold;
 }
 .knowledge__block-author {
 	color: goldenrod;
 	opacity: 0.6;
 	margin-left: 0;
 }
+
+.knowledge__list {
+	position: relative;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	margin-top: 10px;
+}
+
+
+
+.loading {
+	margin-left: 10px;
+	width: 15px;
+	height: 25px;
+	background: red;
+	border-radius: 10px;
+	margin-right: 150px;
+	display: flex;
+	
+}
+.loading__text {
+	margin: 0;
+	align-self: center;
+	justify-content: center;
+	opacity: 0;
+	
+}
+.loading__text_1 {
+	margin-left: 102px;
+}
+.loading__text_2 {
+	margin-left: 27px;
+}
+.loading__text_3 {
+	margin-left: 12px;
+}
+.loading__text_4 {
+	margin-left: 57px;
+}
+
+.loading:hover .loading__text {
+	animation: opacity .3s 1.8s forwards;
+	
+}
+
+@keyframes opacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+.knowledge__list_text {
+	width: 100px;
+	margin: 0;
+	text-align: right;
+}
+
+.loading:hover {
+	animation: load 2s forwards;
+}
+@keyframes load {
+	0% {
+		width: 10px;
+		margin-right: 240px;
+	}
+	100% {
+		width: 240px;
+		margin-right: 10px;
+	}
+}
+
+
+.loading-2:hover {
+	animation: load2 2s forwards;
+}
+@keyframes load2 {
+	0% {
+		width: 10px;
+		margin-right: 90px;
+	}
+	100% {
+		width: 90px;
+		margin-right: 10px;
+	}
+}
+
+.loading-3:hover {
+	animation: load3 2s forwards;
+}
+@keyframes load3 {
+	0% {
+		width: 10px;
+		margin-right: 60px;
+	}
+	100% {
+		width: 60px;
+		margin-right: 10px;
+	}
+}
+
+.loading-4:hover {
+	animation: load4 2s forwards;
+}
+@keyframes load4 {
+	0% {
+		width: 10px;
+		margin-right: 150px;
+	}
+	100% {
+		width: 150px;
+		margin-right: 10px;
+	}
+}
+
+
+

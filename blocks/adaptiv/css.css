@@ -3,6 +3,17 @@
 		width: 700px;
 		height: 900px;
 	}
+
+@keyframes image {
+  0% {
+    transform: translate(0 ,0);
+  }
+  100% {
+    transform: translate(0 , -1900px);
+  }
+}
+
+
 	.about__image-container {
 		width: 600px;
 		height: 580px;
@@ -108,4 +119,6 @@
 	.about__images {
 		margin-top: 150px;
 	}
+
+
 }

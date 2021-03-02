@@ -9,8 +9,8 @@ function Card3D(card, ev) {
   let height = imgRect.height;
   let mouseX = ev.offsetX;
   let mouseY = ev.offsetY;
-  let rotateY = map(mouseX, 10, 180, -25, 35);
-  let rotateX = map(mouseY, 10, 250, 25, -35);
+  let rotateY = map(mouseX, 10, 280, -25, 35);
+  let rotateX = map(mouseY, 10, 450, 25, -35);
  
   
   img.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
