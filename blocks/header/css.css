@@ -17,11 +17,20 @@ body {
   font-weight: 100;
   font-family: Montserrat, Helvetica, Verdana, sans-serif;
   -webkit-text-size-adjust: 100%;
-  overflow-x: hidden;
+ 
  background: #020202;
 }
 
+.animation-title{
+transform: rotateY(90deg) ;
 
+
+
+}
+.animation-title.active{
+transform: rotateZ(0) ;
+transition-duration: 3s;
+}
 
 .header__title {
   font-size: 75px;
@@ -52,11 +61,24 @@ ul li {
 .header {
   position: relative;
 }
+.animation__hiden {
+  overflow-y: hidden;
+}
 .loaded2 {
   -webkit-transform-origin: -10em top;
   transform-origin: -10em top;
   color: goldenrod;
   font-size: 18px;
+  margin: 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  overflow-y: hidden;
+  transform: translate(0, 80px);
+  
+}
+.loaded2.active {
+  transform: translate(0, 0);
+  transition-duration: 2s;
 }
 
 .loaded3 {

@@ -7,20 +7,28 @@
 	margin-left: 10px;
 }
 .knowledge {
-	width: 400px;
-	overflow-x: hidden;
+	width: 500px;
+	overflow: hidden;
 }
 .knowledge__title {
 	color: goldenrod;
 	margin: 0;
-	margin-bottom: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
 	margin-left: 10px;
+	font-size: calc(20px + 30 * ((100vw - 320px) / (1920 - 320)));
+	line-height: calc(20px + 30 * ((100vw - 320px) / (1920 - 320)));
+	border-bottom: 1px solid #ffffff30;
+
 }
+
 .knowledge__title span {
 	color: white;
 }
 .knowledge__lists {
 	margin-left: 20px;
+	overflow: hidden;
+	
 	
 }
 
@@ -52,14 +60,35 @@
 	flex-wrap: nowrap;
 	align-items: center;
 	margin-top: 10px;
+
+}
+.knowledge__list:nth-child(1) .knowledge__list_text.active {
+	transform: translate(0,0);
+	transition-duration: .5s;
+
+}
+.knowledge__list:nth-child(2) .knowledge__list_text.active {
+	transform: translate(0,0);
+	transition-duration: 1s;
+
+}
+.knowledge__list:nth-child(3) .knowledge__list_text.active {
+	transform: translate(0,0);
+	transition-duration: 1.5s;
+
+}
+.knowledge__list:nth-child(4) .knowledge__list_text.active {
+	transform: translate(0,0);
+	transition-duration: 2s;
+
 }
 
 
 
 .loading {
 	margin-left: 10px;
-	width: 15px;
 	height: 25px;
+	width: 0px;
 	background: red;
 	border-radius: 10px;
 	margin-right: 150px;
@@ -71,6 +100,9 @@
 	align-self: center;
 	justify-content: center;
 	opacity: 0;
+	color: #171717;
+	font-weight: bold;
+
 	
 }
 .loading__text_1 {
@@ -86,35 +118,78 @@
 	margin-left: 57px;
 }
 
-.loading:hover .loading__text {
-	animation: opacity .3s 1.8s forwards;
+.loading__text_1.active {
+	
+}
+.loading__text_2.active {
+
+	
+}
+.loading__text_3.active {
+	
+	
+}
+.loading__text_4.active {
+
 	
 }
 
-@keyframes opacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		visibility: visible;
-		opacity: 1;
-	}
-}
 
 .knowledge__list_text {
 	width: 100px;
 	margin: 0;
 	text-align: right;
+	transform: translate(-400px,0);
 }
 
-.loading:hover {
-	animation: load 2s forwards;
+.loading.active {
+	animation: load 1s .5s forwards;
 }
+
+.loading__text_1.active {
+	animation: opac1 1s .8s forwards;
+}
+@keyframes opac1 {
+	100%{
+		opacity: 1;
+	}
+}
+
+.loading__text_2.active {
+	animation: opac2 1s 1.9s forwards;
+}
+@keyframes opac2 {
+	100%{
+		opacity: 1;
+	}
+}
+
+
+.loading__text_3.active {
+	animation: opac3 1s 2.2s forwards;
+}
+@keyframes opac3 {
+	100%{
+		opacity: 1;
+	}
+}
+
+.loading__text_4.active {
+	animation: opac4 1s 1.3s forwards;
+}
+@keyframes opac4 {
+	100%{
+		opacity: 1;
+	}
+}
+
+
 @keyframes load {
 	0% {
-		width: 10px;
+		
 		margin-right: 240px;
 	}
+	
 	100% {
 		width: 240px;
 		margin-right: 10px;
@@ -122,12 +197,12 @@
 }
 
 
-.loading-2:hover {
-	animation: load2 2s forwards;
+.loading-2.active {
+	animation: load2 1s 1.5s forwards;
 }
 @keyframes load2 {
 	0% {
-		width: 10px;
+		
 		margin-right: 90px;
 	}
 	100% {
@@ -136,12 +211,12 @@
 	}
 }
 
-.loading-3:hover {
-	animation: load3 2s forwards;
+.loading-3.active {
+	animation: load3 1s 1.8s forwards;
 }
 @keyframes load3 {
 	0% {
-		width: 10px;
+		
 		margin-right: 60px;
 	}
 	100% {
@@ -150,12 +225,12 @@
 	}
 }
 
-.loading-4:hover {
-	animation: load4 2s forwards;
+.loading-4.active {
+	animation: load4 1s 1s forwards;
 }
 @keyframes load4 {
 	0% {
-		width: 10px;
+		
 		margin-right: 150px;
 	}
 	100% {

@@ -11,12 +11,14 @@
 }
 
 .myskill__title {
+  padding-bottom: 20px;
   margin-top: 30px;
   font-size: calc(24px + 36 * ((100vw - 320px) / (1920 - 320)));
   color: goldenrod;
     line-height: calc(24px + 36 * ((100vw - 320px) / (1920 - 320)));
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ffffff30;
 }
 .myskill__title span {
   color: white;

@@ -54,7 +54,7 @@
   <div class="navList">
     <a  href="#about" class="scrollLink"><span text="nav_1">Обо мне</span></a>
     <a href="#skill" class="scrollLink"><span text="nav_2">Мой скилл</span></a>
-    <a href="#reviews" class="scrollLink"><span text="nav_3">Отзывы</span></a>
+    <a href="#reviews" class="scrollLink animation"><span text="nav_3">Отзывы</span></a>
     <a href="#works" class="scrollLink"><span text="nav_4">Работы</span></a>
     <a href="#contact" class="scrollLink"><span text="nav_5">связь со мной</span></a> 
   </div>
@@ -117,7 +117,9 @@
         </div>
 
       </h2>
-      <h1 class="loaded2 topSubtitle" text="topSubtitle">Портфолио Алексея Фомина</h1>
+      <div class="animation__hiden">
+      <h1 class="loaded2 animation anim-no" text="topSubtitle">Портфолио Алексея Фомина</h1>
+    </div>
       <div class="lader__text">
       <p class="loaded3">Основная моя деятельность Frontend разработка. Моя цель - адаптивный, кроссбраузерный, читабельный код. Возможно я именно тот кого вы ищите! </p></div>
     </div>
@@ -157,14 +159,21 @@
 	<div class="container" id="about">
           <section class="aboutes">
             <div class="about">
-              <h2 class="about__title" text="about__title">About</h2>
-              <p class="about__text" text="about__text_one">Привет! Мне 23 года и я веб разработчик стремящийся постоянно быть в курсе новых событий в вебе! Нахожусь в постоянном развитий и обучений , прохожу курсы, посещаю конференций. Создаю функциональные интерактивные веб сайты адаптивные на всех платформах и устройствах.</p>
-  <p class="about__text" text="About__text">
+              <h2 class="about__title animation-title animation" text="about__title">About</h2>
+              <div class="animation__hiden">
+              <p class="about__text animation" text="about__text_one">Привет! Мне 23 года и я веб разработчик стремящийся постоянно быть в курсе новых событий в вебе! Нахожусь в постоянном развитий и обучений , прохожу курсы, посещаю конференций. Создаю функциональные интерактивные веб сайты адаптивные на всех платформах и устройствах.</p>
+            </div>
+            <div class="animation__hiden">
+  <p class="about__text animation" text="About__text">
         Единственный способ делать отличную работу - любить то, что делаешь. И черт возьми это имменно то что я люблю!
   </p>
+</div>
+
               
             </div>
-            <div class="about__images">
+            <p class="emblem emblem_header">Alex*Lin*Frontend*</p>
+             
+            <div class="about__images animation">
               <div class="about__image-container">
                 <div class="about__image-animation">
               <img class="about__img-ful" src="image/animations/ipad-1.png" alt="Тут должна быть работа">
@@ -183,10 +192,11 @@
             </div>
             </div>
             <img class="about__image" src="image/animations/ipad.svg" alt="ipad"></div>
+          
           </section>
 
           <section class="myskill" id="skill">
-            <h2 class="myskill__title" text="meskill__title">С этим я работаю</h2>
+            <h2 class="myskill__title animation-title animation" text="meskill__title">С этим я работаю</h2>
             <p class="myskill__subtitle wave" text="myskill__subtitle">Быстрые.Лучше.Cовременнее</p>
             <div class="carousel-container">
             <div class="carousel">
@@ -287,35 +297,35 @@
 
           <section class="knowledges">
             <div class="knowledge">
-              <h2 class="knowledge__title" text="knowledge__title"></h2>
+              <h2 class="knowledge__title animation-title animation" text="knowledge__title">Я изучаю</h2>
               <div class="knowledge__lists">
 
-                <div class="knowledge__list">
-                  <p class="knowledge__list_text">figma</p>
-                  <div class="loading">
-                    <p class="loading__text loading__text_1">80%</p>
+                <div class="knowledge__list ">
+                  <p class="knowledge__list_text animation">figma</p>
+                  <div class="loading animation">
+                    <p class="loading__text loading__text_1 animation">80%</p>
                   </div>
                 </div>
 
-                <div class="knowledge__list">
-                  <p class="knowledge__list_text">photoshop</p>
-                  <div class="loading loading-4">
-                    <p class="loading__text loading__text_4">50%</p>
+                <div class="knowledge__list ">
+                  <p class="knowledge__list_text animation">photoshop</p>
+                  <div class="loading loading-4 animation">
+                    <p class="loading__text loading__text_4 animation">50%</p>
                   </div>
                 </div>
 
-                <div class="knowledge__list">
-                  <p class="knowledge__list_text">English</p>
-                  <div class="loading loading-2">
-                    <p class="loading__text loading__text_2">30%</p>
+                <div class="knowledge__list ">
+                  <p class="knowledge__list_text animation">English</p>
+                  <div class="loading loading-2 animation">
+                    <p class="loading__text loading__text_2 animation">30%</p>
                   </div>
                 </div>
 
 
-                 <div class="knowledge__list">
-                  <p class="knowledge__list_text">React js</p>
-                  <div class="loading loading-3">
-                    <p class="loading__text loading__text_3">20%</p>
+                 <div class="knowledge__list ">
+                  <p class="knowledge__list_text animation">React js</p>
+                  <div class="loading loading-3 animation">
+                    <p class="loading__text loading__text_3 animation">20%</p>
                   </div>
                 </div>
 
@@ -330,8 +340,8 @@
             <div class="knowledge__block">
              
             <blockquote>
-              <p class="knowledge__block-text" text="knowledge_block">"Никто не предоставит мне успех. Я должен пойти и добиться его сам. Вот почему я здесь. Чтобы доминировать и одержать победу. Над этим миром и над собой"</p>
-              <cite class="knowledge__block-author">Steve Jobs</cite>
+              <p class="knowledge__block-text animation" text="knowledge_block">"Никто не предоставит мне успех. Я должен пойти и добиться его сам. Вот почему я здесь. Чтобы доминировать и одержать победу. Над этим миром и над собой"</p>
+              <cite class="knowledge__block-author">Unknown</cite>
             </blockquote>
           </div>
           </section>
@@ -419,7 +429,7 @@
 <section class="workes" id="works">
 
 
-<h2 class="workes__title" text="work_title">мой работы</h2>
+<h2 class="workes__title animation-title animation" text="work_title">мой работы</h2>
 <p class="workes__text wave" text="work_text">Чтобы написать чистый код, мы сначала пишем грязный код, а затем рефакторим его.</p>
 
 <div class="works">
@@ -490,7 +500,7 @@
     <div class="cell" id="contact">
       
       <div class="cell__form">
-      <h2 class="contacts__subtitle" text="contacts__subtitle">Contacts witch me</h2>
+      <h2 class="contacts__subtitle animation-title animation" text="contacts__subtitle">Contacts witch me</h2>
       <form class="form__contact form__contact_preven">
         <div class="contact__forms">
         <div class="contact__form">
@@ -516,6 +526,7 @@
 
       </form>
         </div>
+        
 
         <div class="cell__links">
           <div class="cell__link">
@@ -560,9 +571,10 @@
 </template>
 
 
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
-  
+ 
+
+  <script src="js/scrollMagic.js"></script>
   <script src="js/instalComments.js"></script>
   <script src="js/text-redverding.js"></script>
   <script src="js/js.js"></script>
@@ -574,10 +586,11 @@
   <script src="js/langiecke.js"></script>
   <script src="js/my-works-card.js"></script>
  <script src="js/validationform.js"></script>
- 
+ <script src="js/logo-emblem.js"></script>
+
   <script></script>
 
-
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 
 

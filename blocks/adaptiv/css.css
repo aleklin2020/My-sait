@@ -58,6 +58,12 @@
 	.rewiverser {
 		padding-left: 30px;
 	}
+	.emblem {
+		display: none;
+	}
+	.about__images {
+		margin-left: 10vw;
+	}
 }
 
 
@@ -77,6 +83,23 @@
 	}
 		.work:hover {
 		transform: scale(1);
+	}
+	.contact__form-text {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 570px) {
+	.footer__author {
+		max-width: 130px;
+		text-align: center;
+	}
+
+}
+
+@media (max-width: 600px) {
+	.about__images {
+		margin-left: 0;
 	}
 }
 
@@ -154,4 +177,5 @@
 	.lader__text {
 		max-width: 300px;
 	}
+
 }
