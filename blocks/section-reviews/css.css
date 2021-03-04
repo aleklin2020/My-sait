@@ -71,6 +71,7 @@ outline: none;
 	overflow-x: scroll;
 	margin-bottom: 50px;
 	margin-top: 50px;
+	overflow-y: hidden;
 }
 .developer-info__review {
 	position: relative;
@@ -93,6 +94,21 @@ outline: none;
         box-sizing: border-box;
 
 }
+.developer-info__review {
+	transform: translate(0, -400px);
+}
+.developer-info__review.active {
+	transform: translate(0, 0);
+	transition-duration: 2s;
+}
+.developer-info__review:nth-child(2n) {
+	transform: translate(0, 400px);
+}
+.developer-info__review:nth-child(2n).active {
+	transform: translate(0, 0);
+	transition-duration: 2s;
+}
+
 
 .review__info {
 	display: -webkit-box;

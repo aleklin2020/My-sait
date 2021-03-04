@@ -63,6 +63,21 @@ color: rgba(240, 240, 240, 0.8)
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
+	transform: rotate(20deg) translate(0, -400px) scale(0);
+}
+.contact__form.active {
+	animation: form 2s forwards;
+}
+@keyframes form {
+
+10% {
+	transform: scale(0.4) translate(0, -380px);
+}
+
+100% {
+		transform:rotate(0) scale(1) translate(0, 0px);
+}
+
 }
 .form__name {
 	background: inherit;
@@ -97,6 +112,20 @@ line-height: 18px;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
 	position: relative;
+	transform: rotate(20deg) translate(-500px, 0) scale(0);
+}
+.contact__form-text.active {
+	animation: formContact 2s 1s forwards;
+}
+@keyframes formContact {
+	0% {
+		transform: scale(0.2) translate(500px, 0);
+	}
+
+	100% {
+		transform: scale(1) translate(0,0);
+	}
+
 }
 .form__text {
 	width: 360px;
@@ -141,18 +170,27 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
 .cell__links {
 	position: relative;
 	margin-top: 100px;
-	margin-left: 80px;
-	margin-right: 50px;
+	padding-left: 80px;
+	padding-right: 80px;
 	box-sizing: border-box;
+	overflow: hidden;
 }
 .cell__links-image {
 	width: 200px;
 	height: 350px;
 	margin-top: 100px;
+	transform: scale(0);
 }
+
+.cell__links-image.active {
+transform: scale(1);
+transition-duration: 1s;
+}
+
 .cell__link {
 	position: relative;
 	width: 100px;
+
 }
 .image__link {
 	width: 50px;
@@ -161,25 +199,55 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
 .cell__link-list {
 	position: absolute;
 	cursor: pointer;
+	top: 100px;
 	}
 .cell__link-list:hover {
 	opacity: 0.7;
 	border: 4px solid rgba(1,1,1, .6);
 }	
-.cell__link-list:nth-child(1) {
+.cell__link-list:nth-child(1).active {
 	left: -70px;
 	top: 90px;
 }
-.cell__link-list:nth-child(2) {
+.cell__link-list:nth-child(2).active {
 	left: 0;
 	top: 0;
 }
-.cell__link-list:nth-child(3) {
+.cell__link-list:nth-child(3).active {
 	right: -100px;
 	top: 0;
 }
-.cell__link-list:nth-child(4) {
+.cell__link-list:nth-child(4).active {
 	right: -170px;
 	top: 90px;
 }
+.cell__link-list{
+	transform: scale(1) translate(600px, 250px);
+}
+.cell__link-list:nth-child(1).active {
+	animation: scale 1s 0.3s forwards;
+}
+.cell__link-list:nth-child(2).active {
+		animation: scale 1s 0.6s forwards;
+}
+.cell__link-list:nth-child(3).active {
+		animation: scale 1s .9s forwards;
+}
+.cell__link-list:nth-child(4).active {
+		animation: scale 1s 1.2s forwards;
+}
+
+@keyframes scale {
+	
+	
+	1% {
+		transform: scale(0) translate(0,0);
+	}
+	100% {
+		transform: scale(1) translate(0,0);
+	}
+}
+
+
+
 

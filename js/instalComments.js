@@ -10,7 +10,7 @@ const cardReview = document.querySelector(".review")
 const addButton = document.querySelector(".form__logo")
 const form = document.querySelector(".form__contact")
 const date = new Date().toLocaleDateString(); // Дата пользователя 
-
+const animationForm = popupComment.querySelectorAll(".animation-form")
 
 // поиск template
 
@@ -83,11 +83,14 @@ function addComments (evt) {
 
 
 function popupCommentOpen (elementOpen) {
-	elementOpen.classList.add("active")
+	elementOpen.classList.add("active_form")
+	animationForm.forEach(anim => {
+		anim.classList.add("active")
+	})
 	
 }
 function popupCommentClose (elementClose) {
-	elementClose.classList.remove("active")
+	elementClose.classList.remove("active_form")
 	form.reset()
 }
 

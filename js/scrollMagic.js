@@ -6,9 +6,9 @@ if(animItems.length > 0) {
       const animItem = animItems[index];
       const animItemHeight = animItem.offsetHeight;
       const animItemOffset = offset(animItem).top;
-      console.log(animItemOffset)
+      
       const animStart = 4;
-     console.log(animItems)
+   
 
       let animItemPoint = window.innerHeight - animItemHeight / animStart;
 
@@ -17,9 +17,9 @@ if(animItems.length > 0) {
       }
 
       if ((pageYOffset > animItemOffset - animItemPoint) &&  pageYOffset < (animItemOffset + animItemHeight)) {
-        console.log('bibobe')
+       
         animItem.classList.add('active');
-        console.log(animItem)
+        
       } else {
         if (!animItem.classList.contains("anim-no"))
         animItem.classList.remove('active');
