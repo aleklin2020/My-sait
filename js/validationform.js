@@ -47,6 +47,8 @@ const formContact = document.querySelector(".form__contact_preven")
 
 function formNoStyle(evt) {
 evt.preventDefault()
+formContact.reset()
+
 }
 
 formContact.addEventListener("submit", formNoStyle);
