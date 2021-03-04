@@ -44,11 +44,39 @@ function mask(event) {
 
 
 const formContact = document.querySelector(".form__contact_preven")
-
+/*
 function formNoStyle(evt) {
 evt.preventDefault()
-formContact.reset()
+formContact.action = "https://formspree.io/f/mqkgvoqz";
+formContact.method = 'POST';
+formContact.submit()
 
 }
 
+
 formContact.addEventListener("submit", formNoStyle);
+*/
+
+$(function() {
+      $('.form__contact_preven').submit(function(e) {
+        var $form = $(this);
+        $.ajax({
+          type: $form.attr('method'),
+          url: $form.attr('action'),
+          data: $form.serialize()
+        }).done(function() {
+          console.log('success');
+        }).fail(function() {
+          console.log('fail');
+        });
+        //отмена действия по умолчанию для кнопки submit
+        e.preventDefault(); 
+        formContact.reset();
+
+      });
+    });
+
+
+
+
+
