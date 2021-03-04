@@ -22,12 +22,13 @@ const commentTemplate = document.querySelector("#templete-comments")// Темп�
 	const linkComment = newElement.querySelector(".review__link")
 	const reviewComment = newElement.querySelector(".review__text")
 	const dateComment = newElement.querySelector(".review__data")
+	const animation = newElement.querySelector(".developer-info__review")
 
 	nameComment.textContent = name 
 	linkComment.href = item 
 	reviewComment.textContent = messega
 	dateComment.textContent = dateAdd
-
+	animation.classList.add("active")
 
 
 	return newElement;
@@ -41,11 +42,13 @@ const commentTemplate = document.querySelector("#templete-comments")// Темп�
 	const linkComment = newElement.querySelector(".review__link")
 	const reviewComment = newElement.querySelector(".review__text")
 	const dateComment = newElement.querySelector(".review__data")
+	const animation = newElement.querySelector(".developer-info__review")
 	
 	nameComment.textContent = name 
 	reviewComment.textContent = messega
 	dateComment.textContent = dateAdd
 	linkComment.classList.add("no-active")
+	animation.classList.add("active")
 
 
 	return newElement;
