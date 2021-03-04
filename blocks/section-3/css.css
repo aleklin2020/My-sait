@@ -89,12 +89,14 @@
 	margin-left: 10px;
 	height: 25px;
 	width: 0px;
-	background: red;
+	background: linear-gradient( 45deg, #e38010, #1535bf, red);
+	background-position: 0 0 ;
 	border-radius: 10px;
 	margin-right: 150px;
 	display: flex;
 	
 }
+
 .loading__text {
 	margin: 0;
 	align-self: center;
@@ -191,6 +193,7 @@
 	}
 	
 	100% {
+		background-position: 0px 100px;
 		width: 240px;
 		margin-right: 10px;
 	}
@@ -206,6 +209,7 @@
 		margin-right: 90px;
 	}
 	100% {
+		background-position: 0px 100px;
 		width: 90px;
 		margin-right: 10px;
 	}
@@ -220,6 +224,7 @@
 		margin-right: 60px;
 	}
 	100% {
+		background-position: 0px 100px;
 		width: 60px;
 		margin-right: 10px;
 	}
@@ -234,6 +239,7 @@
 		margin-right: 150px;
 	}
 	100% {
+		background-position: 0px 100px;
 		width: 150px;
 		margin-right: 10px;
 	}
