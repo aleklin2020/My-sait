@@ -1,9 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
+
 
 .reviews {
 	position: relative;
@@ -102,11 +97,22 @@ outline: none;
 	transition-duration: 2s;
 }
 .developer-info__review:nth-child(2n) {
-	transform: translate(0, 400px);
+
 }
 .developer-info__review:nth-child(2n).active {
-	transform: translate(0, 0);
-	transition-duration: 2s;
+	animation: review 2s forwards;
+
+}
+@keyframes review {
+ 0% {
+ 	transform: translate(0, 400px);
+ }
+ 2% {
+ 	transform: opacity(1);
+ }
+ 100% {
+ 	transform: translate(0,0) scale(1);
+ }
 }
 
 
