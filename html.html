@@ -10,6 +10,20 @@
 
 	<link rel="stylesheet" type="text/css" href="page/import.css">
   <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+
+ <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
+  <script defer src="js/langiecke.js"></script>
+  <script defer src="js/instalComments.js"></script>
+  <script defer src="js/js.js"></script>
+  <script defer src="js/menu-open.js"></script>
+  <script defer src="js/typed.js"></script>
+  <script defer src="js/taped-text.js"></script>
+  <script defer src="js/my-works.js"></script>
+  <script defer src="js/my-works-card.js"></script>
+ <script defer src="js/validationform.js"></script>
+ <script defer src="js/logo-emblem.js"></script>
+
 </head>
 <body>
   <div class="page">
@@ -150,14 +164,14 @@
             <div class="about__images animation">
               <div class="about__image-container">
                 <div class="about__image-animation">
-              <img class="about__img-ful" src="image/animations/ipad-1.png" alt="Тут должна быть работа">
-              <img class="about__img-ful" src="image/animations/ipad-2.png" alt="Тут должна быть работа">
-               <img class="about__img-ful" src="image/animations/ipad-3.png" alt="Тут должна быть работа">
-                <img class="about__img-ful" src="image/animations/ipad-4.png" alt="Тут должна быть работа">
-                 <img class="about__img-ful" src="image/animations/ipad-5.png" alt="Тут должна быть работа">
-                  <img class="about__img-ful" src="image/animations/ipad-6.png" alt="Тут должна быть работа">
-                   <img class="about__img-ful" src="image/animations/ipad-7.png" alt="Тут должна быть работа">
-                    <img class="about__img-ful" src="image/animations/ipad-8.png" alt="Тут должна быть работа">
+              <img class="about__img-ful" src="image/animations/ipad-1.jpg" alt="Тут должна быть работа">
+              <img class="about__img-ful" src="image/animations/ipad-2.jpg" alt="Тут должна быть работа">
+               <img class="about__img-ful" src="image/animations/ipad-3.jpg" alt="Тут должна быть работа">
+                <img class="about__img-ful" src="image/animations/ipad-4.jpg" alt="Тут должна быть работа">
+                 <img class="about__img-ful" src="image/animations/ipad-5.jpg" alt="Тут должна быть работа">
+                  <img class="about__img-ful" src="image/animations/ipad-6.jpg" alt="Тут должна быть работа">
+                   <img class="about__img-ful" src="image/animations/ipad-7.jpg" alt="Тут должна быть работа">
+                    <img class="about__img-ful" src="image/animations/ipad-8.jpg" alt="Тут должна быть работа">
 
 
 
@@ -432,7 +446,7 @@
     <div class="work">
     <div class="work__info work__info_two">
       <h2 class="work__title work__animation">Travel in Russia</h2>
-      <p class="work__text work__animation">Сайт визитка потешествие по Россий</p>
+      <p class="work__text work__animation">Сайт визитка путешествий по Россий</p>
       <a class="work__button work__animation" href="https://aleklin2020.github.io/rossia-goroda/html" target="_blank" text="work_buttons">Посмотреть работу</a>
      </div>
   
@@ -546,11 +560,11 @@
       <h2 class="contacts__subtitle some-space" text="form__leave">
       </h2>
         </div>
-      <form class="form__contact">
+      <form class="form__contact form-comment_up" action="https://formfor.site/send/efJL6tpBzkfSFzBJGNushxKzytYCjO" method="POST">
         <div class="contact__forms">
         <div class="contact__form animation-form" style="display: flex;">
           <label class="form__names" for="name" text="form__name"></label>
-          <input class="form__name form-name" required type="text" name="Name" placeholder="Alex" id="name">
+          <input class="form__name form-name" required type="text" name="name" placeholder="Alex" id="name">
         </div>
         <div class="contact__form animation-form" style="display: flex;">
           <label class="form__names" for="link" text="form__link"></label>
@@ -561,7 +575,7 @@
       <div class="contact__form-text animation-form" style="display: flex;">
         <div class="image__rever-2"></div>
           <label class="form__names"  for="text" text="form__mesege">Messege</label>
-          <textarea class="form__name form__text" required placeholder="Мне важно знать ваше мнение" id="text"></textarea>
+          <textarea class="form__name form__text" required placeholder="Мне важно знать ваше мнение" id="text" name="messege"></textarea>
           <button class="form__logo" type="submit"></button>
         </div>
 
@@ -607,7 +621,7 @@
             </div>
           </div>
           <p class="review__text"></p>  
-          <date class="review__data">11.11.2011</date>
+          <date class="review__data"></date>
       </div>
 </template>
 
@@ -617,28 +631,15 @@
 
 
  
- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
-  <script src="js/langiecke.js"></script>
-  <script src="js/scrollMagic.js"></script>
-  <script src="js/instalComments.js"></script>
-  <script src="js/text-redverding.js"></script>
-  <script src="js/js.js"></script>
-  <script src="js/menu-open.js"></script>
-  <script src="js/typed.js"></script>
-  <script src="js/taped-text.js"></script>
- 
-  <script src="js/my-works.js"></script>
-  
-  <script src="js/my-works-card.js"></script>
- <script src="js/validationform.js"></script>
- <script src="js/logo-emblem.js"></script>
 
-  <script></script>
+
+  
+  <script src="js/scrollMagic.js"></script>
+  <script src="js/text-redverding.js"></script>
 
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 
-
+<script></script>
 </body>
 </html>

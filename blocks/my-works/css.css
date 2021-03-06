@@ -66,16 +66,16 @@ border-radius: 20px;
 	background-color: rgba(0,0,0, .8);
 }
 .work__info_one {
-		background-image: url(../../image/work/work-1.png);
+		background-image: url(../../image/work/work-1.jpg);
 }
 .work__info_two {
-	background-image: url(../../image/work/work-2.png);
+	background-image: url(../../image/work/work-2.jpg);
 }
 .work__info_free {
-		background-image: url(../../image/work/work-3.png);
+		background-image: url(../../image/work/work-3.jpg);
 }
 .work__info_four {
-			background-image: url(../../image/work/work-4.png);
+			background-image: url(../../image/work/work-4.jpg);
 }
 
 

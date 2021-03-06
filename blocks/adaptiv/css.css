@@ -67,6 +67,23 @@
 	.about__images {
 		margin-left: 10vw;
 	}
+
+
+	.developer-info__review {
+		transform: translate(800px, 0);
+	}
+	.developer-info__review.active {
+		transform: translate(0,0);
+		animation:transform 2s forwards;
+	}
+	.developer-info__review:nth-child(2n) {
+transform: translate(800px, 0);
+}
+	.developer-info__review:nth-child(2n).active {
+	transform: translate(0,0);
+	animation: transform 2s forwards;
+
+}
 }
 
 

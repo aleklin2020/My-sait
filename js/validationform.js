@@ -64,7 +64,7 @@ $(function() {
           mistake.classList.add("active-modul");
             setTimeout (function() {
              $(mistake).removeClass('active-modul');
-              }, 4000);
+              }, 5000);
         });
         
         e.preventDefault(); 
@@ -77,4 +77,5 @@ $(function() {
 
 
 
+    
 

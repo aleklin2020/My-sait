@@ -97,7 +97,7 @@ outline: none;
 	transition-duration: 2s;
 }
 .developer-info__review:nth-child(2n) {
-
+transform: translate(0, 400px);
 }
 .developer-info__review:nth-child(2n).active {
 	animation: review 2s forwards;
@@ -156,10 +156,11 @@ color: #D3D3D4;
 opacity: 0.8;
 max-width: 150px;
 overflow: hidden;
+white-space: nowrap;
 -o-text-overflow: ellipsis;
    text-overflow: ellipsis;
 }
-.review__text {
+.review__text {	
 	white-space: normal;
 	font-family: Rubik;
 font-style: normal;
@@ -169,6 +170,7 @@ line-height: 18px;
 color: rgba(240, 240, 240, 1);
 max-width: 260px;
 max-height: 200px;
+overflow-x: hidden;
 overflow-y: scroll;
 }
 
