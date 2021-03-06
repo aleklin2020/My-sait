@@ -344,9 +344,20 @@ ul li {
   position: absolute;
   bottom: 50px;
   right: 50px;
-  -webkit-transition: all 2s cubic-bezier(0.15, 0.1, 0.25, 1);
-  transition: all 2s cubic-bezier(0.15, 0.1, 0.25, 1);
+  transform: rotate(0deg);
+
+  animation: compras 14s linear infinite;
 }
+
+@keyframes compras {
+
+  100% {
+    transform: rotate(360deg);
+
+  }
+}
+
+
 .compassrose.goodbye {
   right: -400px;
   bottom: -100px;
@@ -571,7 +582,7 @@ ul li {
   background: linear-gradient(to bottom, #f7455f, #f57a0c, #e6b30b);
 }
 
-.lader__text .lader__text_rus {
+.lader__text , .lader__text_rus {
   max-width: 500px;
 }
 .lader__text_rus {

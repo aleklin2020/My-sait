@@ -2,12 +2,12 @@
 @import url(../blocks/menu/css.css);
 @import url(../blocks/button-lang/css.css);
 @import url(../blocks/header/css.css);
-@import url(../blocks/section-1/css.css);
-@import url(../blocks/section-2/css.css);
-@import url(../blocks/section-3/css.css);
-@import url(../blocks/section-reviews/css.css);
+@import url(../blocks/about-me/css.css);
+@import url(../blocks/my-skill/css.css);
+@import url(../blocks/mu-knowledge/css.css);
+@import url(../blocks/reviews/css.css);
 @import url(../blocks/my-works/css.css);
-@import url(../blocks/section-work-up/css.css);
+@import url(../blocks/reviews-add/css.css);
 @import url(../blocks/rewiersers/css.css);
 @import url(../blocks/footer/css.css);
 @import url(../blocks/adaptiv/css.css);
