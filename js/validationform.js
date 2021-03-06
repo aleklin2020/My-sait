@@ -44,18 +44,9 @@ function mask(event) {
 
 
 const formContact = document.querySelector(".form__contact_preven")
-/*
-function formNoStyle(evt) {
-evt.preventDefault()
-formContact.action = "https://formspree.io/f/mqkgvoqz";
-formContact.method = 'POST';
-formContact.submit()
-
-}
-
-
-formContact.addEventListener("submit", formNoStyle);
-*/
+const formSend = document.querySelector(".send-active")
+const formSendActive = document.querySelector("active-modul")
+const mistake = document.querySelector(".mistake")
 
 $(function() {
       $('.form__contact_preven').submit(function(e) {
@@ -65,15 +56,22 @@ $(function() {
           url: $form.attr('action'),
           data: $form.serialize()
         }).done(function() {
-          console.log('success');
+           formSend.classList.add("active-modul");
+            setTimeout (function() {
+             $(formSend).removeClass('active-modul');
+              }, 4000);
         }).fail(function() {
-          console.log('fail');
+          mistake.classList.add("active-modul");
+            setTimeout (function() {
+             $(mistake).removeClass('active-modul');
+              }, 4000);
         });
-        //отмена действия по умолчанию для кнопки submit
+        
         e.preventDefault(); 
         formContact.reset();
-
+            
       });
+            
     });
 
 

@@ -1,15 +1,15 @@
-var wrapper = document.querySelector(".lader__text");
-var text = document.querySelector(".loaded3");
+const wrapper = document.querySelector(".lader__text");
+const text = document.querySelector(".text-none_reider");
 
-var textCont = text.textContent;
+const textCont = text.textContent;
 text.style.display = "none";
 
-for (var i = 0; i < textCont.length; i++) {
+for (let i = 0; i < textCont.length; i++) {
   (function(i) {
     setTimeout(function() {
       // Created textNode to append
-      var texts = document.createTextNode(textCont[i])
-      var span = document.createElement('span');
+      let texts = document.createTextNode(textCont[i])
+      let span = document.createElement('span');
       span.appendChild(texts);
 
       span.classList.add("header__wave");

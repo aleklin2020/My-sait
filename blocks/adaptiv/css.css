@@ -180,7 +180,7 @@
 	.heroSection .textHome {
 		padding-right: 10px;
 	}
-	.lader__text {
+	.lader__text , .lader__text_rus{
 		max-width: 300px;
 	}
 

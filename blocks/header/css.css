@@ -571,8 +571,11 @@ ul li {
   background: linear-gradient(to bottom, #f7455f, #f57a0c, #e6b30b);
 }
 
-.lader__text {
+.lader__text .lader__text_rus {
   max-width: 500px;
+}
+.lader__text_rus {
+  display: none;
 }
 .header__wave {
   color: #999999;
