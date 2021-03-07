@@ -1,10 +1,6 @@
-
-
 .works-up {
-	background: -o-radial-gradient(at 20%, #111, #000);
+	background: -webkit-radial-gradient(at 20%, #111, #000);
 	background: radial-gradient(at 20%, #111, #000);
-	
-
 }
 .cell {
 	margin-left: 20px;
@@ -14,21 +10,19 @@
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+	flex-wrap: wrap;
 	-ms-flex-pack: distribute;
-	    justify-content: space-around;
+	justify-content: space-around;
 }
 
 .contacts__subtitle {
-	font-family: Rubik;
-font-style: normal;
-font-weight: normal;
-font-size: 44px;
-line-height: 52px;
-text-align: left;
-
-
-color: goldenrod;
+	font-family: "Inter", Arial, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 44px;
+	line-height: 52px;
+	text-align: left;
+	color: goldenrod;
 }
 .contacts__subtitle span {
 	color: goldenrod;
@@ -38,11 +32,11 @@ color: goldenrod;
 	padding-left: 20px;
 	margin-bottom: 15px;
 	font-family: Rubik;
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 18px;
-color: rgba(240, 240, 240, 0.8)
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 18px;
+	color: rgba(240, 240, 240, 0.8)
 }
 .contact__forms {
 	display: -webkit-box;
@@ -50,10 +44,9 @@ color: rgba(240, 240, 240, 0.8)
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	width: 360px;
-
 }
 .contact__form {
 	display: -webkit-box;
@@ -61,22 +54,39 @@ color: rgba(240, 240, 240, 0.8)
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	transform: rotate(20deg) translate(0, -400px) scale(0);
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-transform: rotate(20deg) translate(0, -400px) scale(0);
+	        transform: rotate(20deg) translate(0, -400px) scale(0);
 }
 .contact__form.active {
-	animation: form 2s forwards;
+	-webkit-animation: form 2s forwards;
+	        animation: form 2s forwards;
+}
+@-webkit-keyframes form {
+
+	10% {
+		-webkit-transform: scale(0.4) translate(0, -380px);
+		        transform: scale(0.4) translate(0, -380px);
+	}
+
+	100% {
+		-webkit-transform:rotate(0) scale(1) translate(0, 0px);
+		        transform:rotate(0) scale(1) translate(0, 0px);
+	}
+
 }
 @keyframes form {
 
-10% {
-	transform: scale(0.4) translate(0, -380px);
-}
+	10% {
+		-webkit-transform: scale(0.4) translate(0, -380px);
+		        transform: scale(0.4) translate(0, -380px);
+	}
 
-100% {
-		transform:rotate(0) scale(1) translate(0, 0px);
-}
+	100% {
+		-webkit-transform:rotate(0) scale(1) translate(0, 0px);
+		        transform:rotate(0) scale(1) translate(0, 0px);
+	}
 
 }
 .form__name {
@@ -85,22 +95,22 @@ color: rgba(240, 240, 240, 0.8)
 	padding-left: 25px;
 	height: 60px;
 	border:2px solid goldenrod;
-     color: rgba(240, 240, 240, 1);
- font-family: Rubik;
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 18px;
+	color: rgba(240, 240, 240, 1);
+	font-family: "Inter", Arial, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 18px;
 }
 .form__contact {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+	flex-wrap: wrap;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 .contact__form-text {
 	margin-left: 65px;
@@ -109,35 +119,51 @@ line-height: 18px;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	position: relative;
-	transform: rotate(20deg) translate(-500px, 0) scale(0);
+	-webkit-transform: rotate(20deg) translate(-500px, 0) scale(0);
+	        transform: rotate(20deg) translate(-500px, 0) scale(0);
 }
 .contact__form-text.active {
-	animation: formContact 2s 1s forwards;
+	-webkit-animation: formContact 2s 1s forwards;
+	        animation: formContact 2s 1s forwards;
 }
-@keyframes formContact {
+@-webkit-keyframes formContact {
 	0% {
-		transform: scale(0.2) translate(500px, 0);
+		-webkit-transform: scale(0.2) translate(500px, 0);
+		        transform: scale(0.2) translate(500px, 0);
 	}
 
 	100% {
-		transform: scale(1) translate(0,0);
+		-webkit-transform: scale(1) translate(0,0);
+		        transform: scale(1) translate(0,0);
+	}
+
+}
+@keyframes formContact {
+	0% {
+		-webkit-transform: scale(0.2) translate(500px, 0);
+		        transform: scale(0.2) translate(500px, 0);
+	}
+
+	100% {
+		-webkit-transform: scale(1) translate(0,0);
+		        transform: scale(1) translate(0,0);
 	}
 
 }
 .form__text {
 	width: 360px;
 	height: 320px;
- padding-left: 25px;
- padding-top: 25px;
- font-family: Rubik;
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 18px;
-resize: none;
+	padding-left: 25px;
+	padding-top: 25px;
+	font-family: "Inter", Arial, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 18px;
+	resize: none;
 
 }
 .form__logo {
@@ -151,7 +177,7 @@ resize: none;
 	height: 48px;
 	right: 25px;
 	bottom: 25px;
-background-repeat: no-repeat;
+	background-repeat: no-repeat;
 }
 .contact__image {
 	position: absolute;
@@ -162,8 +188,8 @@ background-repeat: no-repeat;
 	z-index: -1;
 }
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
-  -webkit-transition-delay: 3600s;
-          transition-delay: 3600s;
+	-webkit-transition-delay: 3600s;
+	transition-delay: 3600s;
 }
 
 
@@ -179,12 +205,15 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
 	width: 200px;
 	height: 350px;
 	margin-top: 100px;
-	transform: scale(0);
+	-webkit-transform: scale(0);
+	        transform: scale(0);
 }
 
 .cell__links-image.active {
-transform: scale(1);
-transition-duration: 1s;
+	-webkit-transform: scale(1);
+	        transform: scale(1);
+	-webkit-transition-duration: 1s;
+	        transition-duration: 1s;
 }
 
 .cell__link {
@@ -202,7 +231,7 @@ transition-duration: 1s;
 	top: 100px;
 	width: 50px;
 	height: 50px;
-	}
+}
 
 .cell__link-list:nth-child(1) {
 	background-image: url(../../image/cell-links/git.svg);
@@ -249,31 +278,52 @@ transition-duration: 1s;
 	top: 90px;
 }
 .cell__link-list{
-	transform: scale(1) translate(600px, 250px);
+	-webkit-transform: scale(1) translate(600px, 250px);
+	        transform: scale(1) translate(600px, 250px);
 }
 .cell__link-list:nth-child(1).active {
-	animation: scale 1s 0.3s forwards;
+	-webkit-animation: scale 1s 0.3s forwards;
+	        animation: scale 1s 0.3s forwards;
 }
 .cell__link-list:nth-child(2).active {
-		animation: scale 1s 0.6s forwards;
+	-webkit-animation: scale 1s 0.6s forwards;
+	        animation: scale 1s 0.6s forwards;
 }
 .cell__link-list:nth-child(3).active {
-		animation: scale 1s .9s forwards;
+	-webkit-animation: scale 1s .9s forwards;
+	        animation: scale 1s .9s forwards;
 }
 .cell__link-list:nth-child(4).active {
-		animation: scale 1s 1.2s forwards;
+	-webkit-animation: scale 1s 1.2s forwards;
+	        animation: scale 1s 1.2s forwards;
+}
+
+@-webkit-keyframes scale {
+	
+	
+	1% {
+		-webkit-transform: scale(0) translate(0,0);
+		        transform: scale(0) translate(0,0);
+	}
+	100% {
+		-webkit-transform: scale(1) translate(0,0);
+		        transform: scale(1) translate(0,0);
+	}
 }
 
 @keyframes scale {
 	
 	
 	1% {
-		transform: scale(0) translate(0,0);
+		-webkit-transform: scale(0) translate(0,0);
+		        transform: scale(0) translate(0,0);
 	}
 	100% {
-		transform: scale(1) translate(0,0);
+		-webkit-transform: scale(1) translate(0,0);
+		        transform: scale(1) translate(0,0);
 	}
 }
+
 
 
 

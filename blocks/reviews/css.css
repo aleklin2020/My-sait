@@ -1,8 +1,5 @@
-
-
 .reviews {
 	position: relative;
-
 }
 .reviews__container {
 	position: relative;
@@ -11,54 +8,46 @@
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 }
 .reviews__button {
 	-ms-flex-item-align: end;
-	    align-self: flex-end;
+	align-self: flex-end;
 	margin-right: 30px;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	width: 340px;
 	height: 60px;
-	 background-color: transparent;
-  border-radius: 18px;
-border: 1.4px solid goldenrod;
--webkit-box-sizing: border-box;
-        box-sizing: border-box;
-font-family: Rubik;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 18px;
-color: goldenrod;
-outline: none;
+	background-color: transparent;
+	border-radius: 18px;
+	border: 1.4px solid goldenrod;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	font-family: "Inter", Arial, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 18px;
+	color: goldenrod;
+	outline: none;
 }
-
-
-
-
-
-
-
-
 .reviews__button:hover {
 	cursor: pointer;
 	opacity: 0.7;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 .reviews__button span {
 	color: white;
 	margin-left: 5px;
 }
-
 .review {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -75,8 +64,8 @@ outline: none;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	padding: 20px;
 	margin-top: 10px;
 	margin-left: 10px;
@@ -85,43 +74,65 @@ outline: none;
 	min-width: 220px;
 	border-radius: 32px 18px 18px 31px;
 	border: 1.4px solid goldenrod;
--webkit-box-sizing: border-box;
-        box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 
 }
 .developer-info__review {
-	transform: translate(0, -400px);
+	-webkit-transform: translate(0, -400px);
+	        -ms-transform: translate(0, -400px);
+	    transform: translate(0, -400px);
 }
 .developer-info__review.active {
-	transform: translate(0, 0);
-	transition-duration: 2s;
+	-webkit-transform: translate(0, 0);
+	        -ms-transform: translate(0, 0);
+	    transform: translate(0, 0);
+	-webkit-transition-duration: 2s;
+	        -o-transition-duration: 2s;
+	   transition-duration: 2s;
 }
 .developer-info__review:nth-child(2n) {
-transform: translate(0, 400px);
+	-webkit-transform: translate(0, 400px);
+	        -ms-transform: translate(0, 400px);
+	    transform: translate(0, 400px);
 }
 .developer-info__review:nth-child(2n).active {
-	animation: review 2s forwards;
+	-webkit-animation: review 2s forwards;
+	        animation: review 2s forwards;
 
+}
+@-webkit-keyframes review {
+	0% {
+		-webkit-transform: translate(0, 400px);
+		        transform: translate(0, 400px);
+	}
+	2% {
+		-webkit-transform: opacity(1);
+		        transform: opacity(1);
+	}
+	100% {
+		-webkit-transform: translate(0,0) scale(1);
+		        transform: translate(0,0) scale(1);
+	}
 }
 @keyframes review {
- 0% {
- 	transform: translate(0, 400px);
- }
- 2% {
- 	transform: opacity(1);
- }
- 100% {
- 	transform: translate(0,0) scale(1);
- }
+	0% {
+		-webkit-transform: translate(0, 400px);
+		        transform: translate(0, 400px);
+	}
+	2% {
+		-webkit-transform: opacity(1);
+		        transform: opacity(1);
+	}
+	100% {
+		-webkit-transform: translate(0,0) scale(1);
+		        transform: translate(0,0) scale(1);
+	}
 }
-
-
 .review__info {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	
-	
 }
 
 .review__names {
@@ -130,61 +141,71 @@ transform: translate(0, 400px);
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	margin-left: 10px;
-
 }
 .review__link {
-	font-family: Rubik;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 15px;
-color: goldenrod;
-opacity: 0.7;
-opacity: 0.8;
-margin-bottom: 10px;
+	font-family: "Inter", Arial, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing:1px;
+	font-size: 12px;
+	line-height: 15px;
+	color: goldenrod;
+	opacity: 0.7;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	opacity: 0.8;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	margin-bottom: 10px;
 }
 .review__name {
-font-family: Rubik;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 18px;
-color: #D3D3D4;
-opacity: 0.8;
-max-width: 150px;
-overflow: hidden;
-white-space: nowrap;
--o-text-overflow: ellipsis;
-   text-overflow: ellipsis;
+	font-family: "Inter", Arial, sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 29px;
+	margin: 0;
+	margin-bottom: 10px;
+	color: #D3D3D4;
+	opacity: 0.8;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	max-width: 150px;
+	overflow: hidden;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+	   text-overflow: ellipsis;
 }
 .review__text {	
 	white-space: normal;
-	font-family: Rubik;
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 18px;
-color: rgba(240, 240, 240, 1);
-max-width: 260px;
-max-height: 200px;
-overflow-x: hidden;
-overflow-y: scroll;
+	font-family: "Inter", Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	margin: 0;
+	margin-top: 10px;
+	font-size: 16px;
+	line-height: 18px;
+	color: rgba(240, 240, 240, 1);
+	max-width: 260px;
+	max-height: 200px;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 .review__data {
-font-family: Rubik;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 18px;
-color: #D3D3D4;
-opacity: 0.6;
-position: absolute;
-bottom: 10px;
-left: 20px;
+	font-family: "Inter", Arial, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 18px;
+	color: #D3D3D4;
+	opacity: 0.6;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+	margin: 0;
+
 }
 .review__bottom {
 	margin-bottom: -10px;

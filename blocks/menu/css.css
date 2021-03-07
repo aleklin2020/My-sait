@@ -30,7 +30,7 @@
 }
 .nav-toggle:before,
 .nav-toggle:after,
-.nav-toggle span {
+.nav-toggle  span {
   opacity: 0.8;
   position: absolute;
   top: 50%;
@@ -46,7 +46,7 @@
 }
 .nav-toggle:hover::before,
 .nav-toggle:hover::after,
-.nav-toggle:hover span {
+.nav-toggle:hover span  {
   opacity: 1;
   background: goldenrod;
 }
@@ -71,7 +71,7 @@
 }
 .nav-toggle.open:before,
 .nav-toggle.open:after,
-.nav-toggle.open span {
+.nav-toggle.open span  {
   transition: -webkit-transform 0.5s, transform 0.5s, opacity 0.1s, width 0.5s;
 }
 .nav-toggle.open span {
@@ -89,17 +89,7 @@
   -webkit-transform: translate(-50%, -50%) rotate(35deg);
   transform: translate(-50%, -50%) rotate(35deg);
 }
-
-
-
-
-
-
 /* ____ menu ___ */
-
-
-
-
 .nav {
   position: fixed;
   z-index: 998;
@@ -141,10 +131,10 @@
   transition: -webkit-transform 0.5s cubic-bezier(0.15, 0.1, 0.25, 1.1);
   transition: transform 0.5s cubic-bezier(0.15, 0.1, 0.25, 1.1);
   transition: transform 0.5s cubic-bezier(0.15, 0.1, 0.25, 1.1),
-    -webkit-transform 0.5s cubic-bezier(0.15, 0.1, 0.25, 1.1);
+  -webkit-transform 0.5s cubic-bezier(0.15, 0.1, 0.25, 1.1);
   background-color: #222;
 }
-.nav .navList a span {
+.nav .navList a p {
   position: absolute;
   -webkit-animation: textBG 10s infinite;
   animation: textBG 10s infinite;
@@ -153,7 +143,7 @@
   font-weight: 500;
   font-variation-settings: "wdth" 500;
   font-variation-settings: "wght" 300;
-  font-family: "Raleway", Montserrat, Helvetica, Verdana, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   padding: 20px;
@@ -166,41 +156,41 @@
     goldenrod 40%,
     RoyalBlue 60%,
     olivedrab 80%
-  );
+    );
   background-size: 400%;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-backface-visibility: hidden;
 }
-.nav .navList a:nth-child(1) span {
+.nav .navList a:nth-child(1) p {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
 }
-.nav .navList a:nth-child(2) span {
+.nav .navList a:nth-child(2) p {
   -webkit-animation-delay: 0.1s;
   animation-delay: 0.1s;
 }
-.nav .navList a:nth-child(3) span {
+.nav .navList a:nth-child(3) p {
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
-.nav .navList a:nth-child(4) span {
+.nav .navList a:nth-child(4) p {
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
-.nav .navList a:nth-child(5) span {
+.nav .navList a:nth-child(5) p {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
-.nav .navList a:nth-child(6) span {
+.nav .navList a:nth-child(6) p {
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
 .nav .navList a:hover {
   background-color: #252525;
 }
-.nav .navList a:hover span {
+.nav .navList a:hover p {
   font-variation-settings: "wght" 900;
 }
 .nav .navList a:active {
